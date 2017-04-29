@@ -35,6 +35,7 @@ public class DamageListener implements Listener {
                         BFPlayer bfp = BFPlayerData.getInstance().getPlayers().get(p.getUniqueId());
                         if(bfp.getEnergy() < 100) {
                             bfp.addEnergy(5);
+                            // Energy stuff (for ability), not implemented fully yet.
 //                            if(bfp.getEnergy() == 100) {
 //                                p.playSound(p.getLocation(), Sound.CREEPER_HISS, 5, 1);
 //                                p.sendMessage("§c> §b§lYou now have full energy! §c<");

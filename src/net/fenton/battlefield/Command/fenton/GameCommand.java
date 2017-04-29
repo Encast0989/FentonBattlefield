@@ -59,6 +59,7 @@ public class GameCommand extends FentonCommand {
                     }
                 } else {
                     p.sendMessage("§cInvalid argument.");
+                    p.sendMessage("§cRequires: <regen, extrahearts, permspeed> [value]");
                 }
             } else {
                 p.sendMessage("§cRequires: <regen, extrahearts, permspeed> [value]");

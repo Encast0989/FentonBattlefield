@@ -34,6 +34,7 @@ import java.util.List;
 public class ClassMenu {
 
     private static ClassMenu instance;
+
     public static ClassMenu getInstance() {
         return instance;
     }

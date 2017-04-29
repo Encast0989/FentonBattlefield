@@ -38,6 +38,10 @@ public class BattlefieldDatabase {
         return client;
     }
 
+    public MongoDatabase getDatabase() {
+        return database;
+    }
+
     private void newPlayer(Player p) {
         Document data = players.find(eq("uuid", p.getUniqueId().toString())).first();
         if(data == null) {

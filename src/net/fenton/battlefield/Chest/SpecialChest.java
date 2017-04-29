@@ -22,6 +22,7 @@ import java.util.Random;
 public class SpecialChest implements Listener {
 
     private static SpecialChest instance;
+
     public static SpecialChest getInstance() {
         return instance;
     }
