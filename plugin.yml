@@ -1,0 +1,11 @@
+main: net.fenton.battlefield.Core
+version: 1.6.4
+name: FentonBattlefield
+author: Encast
+description: Fenton Battlefield - Gamemode
+
+commands:
+  opmode:
+    description: OP Mode Command.
+  cstatus:
+    description: Class Status Command.
