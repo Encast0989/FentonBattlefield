@@ -1,6 +1,6 @@
-package net.fenton.battlefield.Command;
+package net.fenton.battlefield.command;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

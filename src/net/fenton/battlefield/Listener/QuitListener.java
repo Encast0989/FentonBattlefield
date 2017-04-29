@@ -1,7 +1,6 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.BFPlayerData;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,7 +11,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 4:22 PM
+ * bfclass created at: 4:22 PM
  */
 public class QuitListener implements Listener {
 

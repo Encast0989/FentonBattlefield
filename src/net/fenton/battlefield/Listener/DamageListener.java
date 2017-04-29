@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -13,7 +13,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 12:59 PM
+ * bfclass created at: 12:59 PM
  */
 public class DamageListener implements Listener {
 

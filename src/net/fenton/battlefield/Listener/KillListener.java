@@ -1,11 +1,11 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
 import net.fenton.api.Fenton;
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
-import net.fenton.battlefield.Player.InventoryLayout;
-import net.fenton.battlefield.Player.KillEffect;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
+import net.fenton.battlefield.player.InventoryLayout;
+import net.fenton.battlefield.player.KillEffect;
 import net.fenton.core.nms.PacketResource;
 import net.fenton.core.player.FentonPlayer;
 import org.bukkit.Bukkit;
@@ -26,7 +26,7 @@ import java.text.DecimalFormat;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 8:32 PM
+ * bfclass created at: 8:32 PM
  */
 public class KillListener implements Listener {
 

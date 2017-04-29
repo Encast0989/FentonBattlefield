@@ -1,9 +1,9 @@
-package net.fenton.battlefield.Menu;
+package net.fenton.battlefield.menu;
 
-import net.fenton.battlefield.Class.BattlefieldClass;
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.bfclass.BattlefieldClass;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import net.fenton.core.enhancedbukkit.FentonItemStack;
 import net.fenton.core.inventory.FentonInventory;
 import net.fenton.core.inventory.FentonInventoryHandler;

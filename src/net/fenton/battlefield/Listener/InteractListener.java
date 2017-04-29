@@ -1,10 +1,10 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
 import net.fenton.battlefield.BattlefieldSettings;
-import net.fenton.battlefield.Class.BattlefieldClass;
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.bfclass.BattlefieldClass;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -22,7 +22,7 @@ import org.bukkit.potion.PotionEffectType;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 2:47 PM
+ * bfclass created at: 2:47 PM
  */
 public class InteractListener implements Listener {
 

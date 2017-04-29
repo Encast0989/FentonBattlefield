@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Player.ClassInfo.*;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.player.ClassInfo.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 4:02 PM
+ * bfclass created at: 4:02 PM
  */
 public class BFClassLevel {
 

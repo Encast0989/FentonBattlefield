@@ -1,9 +1,9 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
-import net.fenton.battlefield.Player.InventoryLayout;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
+import net.fenton.battlefield.player.InventoryLayout;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -13,9 +13,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.player.PlayerItemDamageEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
@@ -25,7 +23,7 @@ import org.bukkit.inventory.ItemStack;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 3:05 PM
+ * bfclass created at: 3:05 PM
  */
 public class MiscListener implements Listener {
 

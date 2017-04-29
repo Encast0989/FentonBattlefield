@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Command.fenton;
+package net.fenton.battlefield.command.fenton;
 
 import net.fenton.api.Fenton;
 import net.fenton.battlefield.BattlefieldSettings;

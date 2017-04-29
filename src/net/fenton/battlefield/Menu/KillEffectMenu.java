@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Menu;
+package net.fenton.battlefield.menu;
 
 import net.fenton.core.inventory.FentonInventory;
 import org.bukkit.entity.Player;

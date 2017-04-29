@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Player.ClassInfo;
+package net.fenton.battlefield.player.ClassInfo;
 
 /**
  * Created by Encast (2017-02-02 11:27 AM)

@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
 import net.fenton.core.enhancedbukkit.FentonItemStack;
 import org.bukkit.Material;
@@ -15,7 +15,7 @@ import java.util.Map;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 4:40 PM
+ * bfclass created at: 4:40 PM
  */
 public class InventoryLayout {
 
@@ -30,7 +30,7 @@ public class InventoryLayout {
 
     public void setMainInventory(Player p) {
         ItemStack gameMenu = FentonItemStack.createStack()
-                .createItemStack(Material.STAINED_CLAY, 1, (short) 5, "§2Game Menu §7(Click)",
+                .createItemStack(Material.STAINED_CLAY, 1, (short) 5, "§2Game menu §7(Click)",
                         Arrays.asList(" ", "§7Click to view special games and", "§7ongoing/upcoming §7Special Events§7."));
         ItemStack profile = FentonItemStack.createStack().createItemStack(Material.BOOK, 1, "§2Profile §7(Click)",
                 Arrays.asList(" ", "§7Click to view your §2Profile§7."));

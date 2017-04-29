@@ -1,12 +1,11 @@
-package net.fenton.battlefield.Database;
+package net.fenton.battlefield.database;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.*;
-import net.fenton.battlefield.Player.ClassInfo.*;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.player.*;
+import net.fenton.battlefield.player.ClassInfo.*;
 import org.bson.Document;
 import org.bukkit.entity.Player;
 
@@ -33,6 +32,10 @@ public class BattlefieldDatabase {
 
     public void disconnect() {
         client.close();
+    }
+
+    public MongoClient getClient() {
+        return client;
     }
 
     private void newPlayer(Player p) {
@@ -62,6 +65,14 @@ public class BattlefieldDatabase {
     }
 
     public void retrievePlayer(Player p) {
+        if(client == null) {
+            BFClassLevel level = new BFClassLevel(new AgrotisClass(1, 1), new ArcherClass(1, 1), new AxerierClass(1, 1), new BlastyClass(1, 1),
+                    new KivosClass(1, 1), new MolesirClass(1, 1), new OucherClass(1, 1), new RelytClass(1, 1), new BlazeClass(0, 1));
+            BFPlayer player = new BFPlayer(BattlefieldClassData.BFClass.AGROTIS, 0, 0, 0, level, 0, 0, false, false, false,
+                    KillEffect.SPEED, new BFPlayerStats(0));
+            BFPlayerData.getInstance().addPlayer(p.getUniqueId(), player);
+            return;
+        }
         Document data = players.find(eq("uuid", p.getUniqueId().toString())).first();
         if(data != null) {
             Document classData = data.get("classes", Document.class);
@@ -136,6 +147,9 @@ public class BattlefieldDatabase {
             player.put("general_stats", dummyPlayer.getStats().toMap());
      */
     public void savePlayer(Player p, boolean removeUser, boolean setOPMode) {
+        if(client == null) {
+            return;
+        }
         BFPlayer bfp = BFPlayerData.getInstance().getPlayers().get(p.getUniqueId());
         if(!bfp.isOpMode()) {
             players.updateOne(eq("uuid", p.getUniqueId().toString()), combine(

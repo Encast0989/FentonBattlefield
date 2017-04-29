@@ -1,8 +1,9 @@
-package net.fenton.battlefield.Listener;
+package net.fenton.battlefield.listener;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.*;
+import net.fenton.battlefield.database.BattlefieldDatabase;
+import net.fenton.battlefield.player.*;
 import net.fenton.core.event.fentonevent.PostLoginEvent;
 import net.fenton.core.nms.PacketResource;
 import org.bukkit.GameMode;
@@ -16,7 +17,7 @@ import org.bukkit.scheduler.BukkitRunnable;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 3:15 PM
+ * bfclass created at: 3:15 PM
  */
 public class JoinListener implements Listener {
 

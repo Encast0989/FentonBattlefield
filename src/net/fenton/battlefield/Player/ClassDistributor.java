@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Class.InstantKillBow;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.InstantKillBow;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 2:20 PM
+ * bfclass created at: 2:20 PM
  */
 public class ClassDistributor {
 

@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
 import java.util.HashMap;
 import java.util.Map;

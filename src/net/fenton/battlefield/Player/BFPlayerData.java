@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.UUID;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 4:11 PM
+ * bfclass created at: 4:11 PM
  */
 public class BFPlayerData {
 

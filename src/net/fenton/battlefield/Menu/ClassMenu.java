@@ -1,12 +1,12 @@
-package net.fenton.battlefield.Menu;
+package net.fenton.battlefield.menu;
 
 import net.fenton.api.Fenton;
-import net.fenton.battlefield.Class.BattlefieldAbility;
-import net.fenton.battlefield.Class.BattlefieldClass;
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Class.BattlefieldAbilityHandler;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.bfclass.BattlefieldAbility;
+import net.fenton.battlefield.bfclass.BattlefieldClass;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.BattlefieldAbilityHandler;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import net.fenton.core.enhancedbukkit.FentonItemStack;
 import net.fenton.core.inventory.FentonInventoryHandler;
 import net.fenton.core.player.FentonPlayer;
@@ -29,7 +29,7 @@ import java.util.List;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 9:25 PM
+ * bfclass created at: 9:25 PM
  */
 public class ClassMenu {
 
@@ -61,7 +61,7 @@ public class ClassMenu {
                 "§bEdit Layout", Arrays.asList(" ", "§cComing Soon!"));
 
         int slotCount = 11;
-        // Class
+        // bfclass
         for(BattlefieldClassData.BFClass classType : BattlefieldClassData.BFClass.values()) {
             if(classType == bfClass) {
                 for(BattlefieldClass classes : BattlefieldClassData.getInstance().getClassByName(classType).getClasses()) {
@@ -138,7 +138,7 @@ public class ClassMenu {
         }
 
         // Choose class
-        ItemStack chooseClass = FentonItemStack.createStack().createItemStack(Material.LAPIS_BLOCK, 1, "§eChoose Class",
+        ItemStack chooseClass = FentonItemStack.createStack().createItemStack(Material.LAPIS_BLOCK, 1, "§eChoose bfclass",
                         Arrays.asList(" ", "§7Click to choose " + bfClass.getName() + " as your", "§7class."));
         // Setting items
         i.setItem(10, classStack);
@@ -160,7 +160,7 @@ public class ClassMenu {
                     bfp.getClassLevel().setClassLevel(bfClass, level);
                     p.sendMessage("§aYou have upgraded §6" + bfClass.getName() + " §ato §3Level " + level + "§a!");
                     p.playSound(p.getLocation(), Sound.LEVEL_UP, 5, 1);
-                    FentonInventoryHandler.getInstance().getMenuByID("BF:" + bfClass.getName() + "Menu").openInventory(p);
+                    FentonInventoryHandler.getInstance().getMenuByID("BF:" + bfClass.getName() + "menu").openInventory(p);
                     FentonPlayer fp = Fenton.getAPI().getPlayerHandler().getPlayers().get(p.getUniqueId());
                     if(level == 5) {
                         Bukkit.getServer().broadcastMessage(fp.getPrefixedName() + " §fhas unlocked the final level for §6" + bfClass.getName());
@@ -195,7 +195,7 @@ public class ClassMenu {
                     bfp.getClassLevel().setAbilityLevelByName(bfClass, level);
                     p.sendMessage("§aYou have upgraded §6" + bfClass.getName() + " Ability §ato §3Level " + level + "§a!");
                     p.playSound(p.getLocation(), Sound.LEVEL_UP, 5, 1);
-                    FentonInventoryHandler.getInstance().getMenuByID("BF:" + bfClass.getName() + "Menu").openInventory(p);
+                    FentonInventoryHandler.getInstance().getMenuByID("BF:" + bfClass.getName() + "menu").openInventory(p);
                 } else {
                     p.sendMessage("§cYou do not have enough coins to purchase this upgrade.");
                 }

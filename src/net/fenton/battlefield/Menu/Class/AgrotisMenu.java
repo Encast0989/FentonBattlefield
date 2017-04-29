@@ -1,9 +1,9 @@
-package net.fenton.battlefield.Menu.Class;
+package net.fenton.battlefield.menu.Class;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Menu.ClassMenu;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.menu.ClassMenu;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import net.fenton.core.inventory.FentonInventory;
 import net.fenton.core.inventory.FentonInventoryHandler;
 import org.bukkit.ChatColor;
@@ -16,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 3:33 PM
+ * bfclass created at: 3:33 PM
  */
 public class AgrotisMenu extends FentonInventory {
 
@@ -52,7 +52,7 @@ public class AgrotisMenu extends FentonInventory {
                 } else {
                     p.sendMessage("§cYou already have the max ability level for this class!");
                 }
-            } else if(name.equalsIgnoreCase("Choose Class")) {
+            } else if(name.equalsIgnoreCase("Choose bfclass")) {
                 ClassMenu.getInstance().chooseClass(p, BattlefieldClassData.BFClass.AGROTIS);
             }
         }

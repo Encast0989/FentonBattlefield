@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
 /**
  * Created by Encast (2017-02-02 3:48 PM)

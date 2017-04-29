@@ -1,6 +1,6 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
 import net.fenton.battlefield.Core;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -18,7 +18,7 @@ import java.text.NumberFormat;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 4:01 PM
+ * bfclass created at: 4:01 PM
  */
 public class BFPlayer {
 
@@ -178,7 +178,7 @@ public class BFPlayer {
         Team coinsScore = s.registerNewTeam("coins");
         coinsScore.addEntry(ChatColor.YELLOW.toString());
         coinsScore.setPrefix("Coins: ");
-        // Class
+        // bfclass
         Team classScore = s.registerNewTeam("class");
         classScore.addEntry(ChatColor.DARK_AQUA.toString());
         classScore.setPrefix("§3");
@@ -188,7 +188,7 @@ public class BFPlayer {
         o.getScore(ChatColor.RED.toString()).setScore(7);
 //        o.getScore(ChatColor.AQUA.toString()).setScore(7);
         o.getScore("  ").setScore(6);
-        o.getScore("Current Class:").setScore(5);
+        o.getScore("Current bfclass:").setScore(5);
         o.getScore(ChatColor.DARK_AQUA.toString()).setScore(4);
         o.getScore("   ").setScore(3);
         o.getScore(ChatColor.YELLOW.toString()).setScore(2);

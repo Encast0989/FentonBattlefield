@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Player;
+package net.fenton.battlefield.player;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Player.ClassInfo.*;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.player.ClassInfo.*;
 
 /**
  * Created by Encast (2017-02-03 3:40 PM)

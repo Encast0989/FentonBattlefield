@@ -1,8 +1,8 @@
-package net.fenton.battlefield.Command;
+package net.fenton.battlefield.command;
 
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,7 +14,7 @@ import org.bukkit.scheduler.BukkitRunnable;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 9:00 PM
+ * bfclass created at: 9:00 PM
  */
 public class OPModeCommand implements CommandExecutor {
 

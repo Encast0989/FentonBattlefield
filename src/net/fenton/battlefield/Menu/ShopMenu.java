@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Menu;
+package net.fenton.battlefield.menu;
 
-import net.fenton.battlefield.Player.BFPlayer;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.player.BFPlayer;
+import net.fenton.battlefield.player.BFPlayerData;
 import net.fenton.core.enhancedbukkit.FentonItemStack;
 import net.fenton.core.inventory.FentonInventory;
 import net.fenton.core.inventory.FentonInventoryHandler;
@@ -22,7 +22,7 @@ import java.util.List;
  * <p>
  * Claiming this code as one's own is strictly forbidden.
  * <p>
- * Class created at: 3:34 PM
+ * bfclass created at: 3:34 PM
  */
 public class ShopMenu extends FentonInventory {
 

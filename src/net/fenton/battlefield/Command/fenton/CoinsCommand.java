@@ -1,4 +1,4 @@
-package net.fenton.battlefield.Command.fenton;
+package net.fenton.battlefield.command.fenton;
 
 import net.fenton.core.command.fentoncommand.FentonCommand;
 import org.bukkit.command.CommandSender;

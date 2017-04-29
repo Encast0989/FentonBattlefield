@@ -1,7 +1,7 @@
-package net.fenton.battlefield.Chest;
+package net.fenton.battlefield.chest;
 
 import net.fenton.battlefield.Core;
-import net.fenton.battlefield.Player.BFPlayerData;
+import net.fenton.battlefield.player.BFPlayerData;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.ArmorStand;
@@ -98,7 +98,7 @@ public class SpecialChest implements Listener {
             if(e.getClickedBlock().getLocation() == currentTierI) {
                 despawnTierIChest();
                 BFPlayerData.getInstance().getPlayers().get(p.getUniqueId()).addCoins(5000);
-                p.sendMessage("§e+5000 Coins (Tier I Chest)!");
+                p.sendMessage("§e+5000 Coins (Tier I chest)!");
             }
         }
     }

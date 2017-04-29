@@ -1,22 +1,21 @@
 package net.fenton.battlefield;
 
-import net.fenton.battlefield.Class.BattlefieldClassData;
-import net.fenton.battlefield.Class.InstantKillBow;
-import net.fenton.battlefield.Class.BattlefieldAbilityHandler;
-import net.fenton.battlefield.Command.ClassStatusCommand;
-import net.fenton.battlefield.Command.OPModeCommand;
-import net.fenton.battlefield.Command.fenton.CoinsCommand;
-import net.fenton.battlefield.Command.fenton.GameCommand;
-import net.fenton.battlefield.Database.BattlefieldDatabase;
-import net.fenton.battlefield.Listener.*;
-import net.fenton.battlefield.Menu.Class.*;
-import net.fenton.battlefield.Menu.ClassMenu;
-import net.fenton.battlefield.Menu.RegularClassMenu;
-import net.fenton.battlefield.Menu.ShopMenu;
-import net.fenton.battlefield.Menu.UltimateClassMenu;
-import net.fenton.battlefield.Player.*;
+import net.fenton.battlefield.bfclass.BattlefieldClassData;
+import net.fenton.battlefield.bfclass.InstantKillBow;
+import net.fenton.battlefield.bfclass.BattlefieldAbilityHandler;
+import net.fenton.battlefield.command.ClassStatusCommand;
+import net.fenton.battlefield.command.OPModeCommand;
+import net.fenton.battlefield.command.fenton.CoinsCommand;
+import net.fenton.battlefield.command.fenton.GameCommand;
+import net.fenton.battlefield.database.BattlefieldDatabase;
+import net.fenton.battlefield.listener.*;
+import net.fenton.battlefield.menu.Class.*;
+import net.fenton.battlefield.menu.ClassMenu;
+import net.fenton.battlefield.menu.RegularClassMenu;
+import net.fenton.battlefield.menu.ShopMenu;
+import net.fenton.battlefield.menu.UltimateClassMenu;
+import net.fenton.battlefield.player.*;
 import net.fenton.core.command.fentoncommand.FentonCommandHandler;
-import net.fenton.core.database.SQLCore;
 import net.fenton.core.inventory.FentonInventoryHandler;
 import net.fenton.core.permission.PermissionManager;
 import net.fenton.core.player.rank.FentonRank;
@@ -26,12 +25,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.UUID;
 
 /**
  *
@@ -63,7 +56,7 @@ public class Core extends JavaPlugin {
 
     public void onDisable() {
         for(Player p : Bukkit.getServer().getOnlinePlayers()) {
-            p.sendMessage("§cBattlefield is currently restarting. You have been kicked to the lobby.");
+            p.sendMessage("§cBattlefield is currently restarting. You have been connected to the lobby.");
             getBattlefieldDatabase().savePlayer(p, true, false);
             net.fenton.core.Core.getInstance().sendPlayerToServer(p, "FenL");
         }
