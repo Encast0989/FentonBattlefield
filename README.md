@@ -1,4 +1,4 @@
 # FentonBattlefield
 FentonBattlefield for Fenton(MC) Network.
 
-Maybe I'll add something later v2.
+A KitPvP based game. Battlefield tries to add new twists to this classic game.
